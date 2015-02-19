@@ -38,17 +38,28 @@ body {
   color: #fdf6e3;
 }
 
-.learn-more {
-  background-color: #586e75;
+.theme1 {
+  background-color: #eee8d5;
 }
 
-.learn-more h3 {
+.theme1 h2 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #586e75;
+}
+
+.theme1 p {
+  color: #586e75;
+}
+
+.theme2 h3 {
   font-family: 'Shift', sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #fdf6e3;
 }
 
-.learn-more p {
-  color: #eee8d5;
+.theme2 p {
+  color: #fdf6e3;
 }
