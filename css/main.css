@@ -1,0 +1,54 @@
+body {
+  background-color: #586e75;
+}
+
+.nav a {
+  color: #fdf6e3;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.landing {
+  background-image: url(../images/franconia.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing .container {
+  position: relative;
+  top:100px;
+}
+
+.landing h1 {
+  color: #fdf6e3;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.landing p {
+  font-size: 20px;
+  color: #fdf6e3;
+}
+
+.learn-more {
+  background-color: #586e75;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fdf6e3;
+}
+
+.learn-more p {
+  color: #eee8d5;
+}
