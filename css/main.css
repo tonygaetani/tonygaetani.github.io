@@ -63,3 +63,11 @@ body {
 .theme2 p {
   color: #fdf6e3;
 }
+
+.refresh a {
+  color: #fdf6e3;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
