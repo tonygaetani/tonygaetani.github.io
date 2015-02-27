@@ -1,5 +1,19 @@
+html, body, .container {
+  height: 100%;
+}
+
 body {
   background-color: #586e75;
+}
+
+.container {
+  display: table;
+  vertical-align: middle;
+}
+
+.vertical-center-row {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .nav a {
@@ -40,6 +54,7 @@ body {
 
 .theme1 {
   background-color: #eee8d5;
+  horizontal-align: middle;
 }
 
 .theme1 h2 {
@@ -53,6 +68,10 @@ body {
   color: #586e75;
 }
 
+.theme2 {
+  horizontal-align: middle;
+}
+
 .theme2 h3 {
   font-family: 'Shift', sans-serif;
   font-size: 18px;
@@ -64,6 +83,16 @@ body {
   color: #fdf6e3;
 }
 
+div.companylogo {
+  min-width: 400px;
+}
+
+img.companylogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}
 .refresh a {
   color: #fdf6e3;
   font-size: 11px;
