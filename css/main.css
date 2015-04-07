@@ -55,11 +55,25 @@ body {
 .theme1 {
   background-color: #eee8d5;
   horizontal-align: middle;
+  height: fit;
+}
+
+.theme1 a {
+  color: #586e75;
+  font-weight: bold;
+  padding: 14px 10px;
 }
 
 .theme1 h2 {
   font-family: 'Shift', sans-serif;
   font-size: 18px;
+  font-weight: bold;
+  color: #586e75;
+}
+
+.theme1 h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 14px;
   font-weight: bold;
   color: #586e75;
 }
@@ -70,11 +84,25 @@ body {
 
 .theme2 {
   horizontal-align: middle;
+  height: fit;
+}
+
+.theme2 a {
+  color: #fdf6e3;
+  font-weight: bold;
+  padding: 14px 10px;
+}
+
+.theme2 h2 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fdf6e3;
 }
 
 .theme2 h3 {
   font-family: 'Shift', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   color: #fdf6e3;
 }
@@ -93,6 +121,7 @@ img.companylogo {
   margin-right: auto;
   margin: 0 auto;
 }
+
 .refresh a {
   color: #fdf6e3;
   font-size: 11px;
