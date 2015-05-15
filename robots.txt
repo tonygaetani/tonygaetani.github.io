@@ -1,0 +1,27 @@
+#
+# http://www.robotstxt.org/wc/robots.html
+# http://www.sxw.org.uk/computing/robots/check.html
+#
+# "Robots are important also. If I don my pure-scientist hat, I would say just
+# send robots; I'll stay down here and get the data. But nobody's ever given a
+# parade for a robot. Nobody's ever named a high school after a robot. So when
+# I don my public-educator hat, I have to recognize the elements of
+# exploration that excite people."
+#  -Larry Page (talking about web crawlers)
+#
+
+User-agent: *
+Crawl-delay: 23
+Sitemap: /sitemap.xml   # not xml
+Disallow: /weather      # this is for me, no one knows about it
+Disallow: /flags        # super fun game time
+Allow: /index
+Allow: /about
+
+User-agent: adsbot-google
+Crawl-delay: 23
+Sitemap: /sitemap.xml
+Disallow: /weather
+Disallow: /flags
+Allow: /index
+Allow: /about
