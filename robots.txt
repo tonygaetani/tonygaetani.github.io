@@ -15,6 +15,7 @@ Crawl-delay: 23
 Sitemap: /sitemap.xml   # not xml
 Disallow: /weather      # this is for me, no one knows about it
 Disallow: /flags        # super fun game time
+Disallow: /zen.txt
 Allow: /index
 Allow: /about
 
@@ -23,5 +24,6 @@ Crawl-delay: 23
 Sitemap: /sitemap.xml
 Disallow: /weather
 Disallow: /flags
+Disallow: /zen.txt
 Allow: /index
 Allow: /about
