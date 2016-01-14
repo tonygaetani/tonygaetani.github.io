@@ -128,3 +128,7 @@ img.companylogo {
   padding: 14px 10px;
   text-transform: uppercase;
 }
+
+.text-aboutme {
+  min-height: 500px;
+}
