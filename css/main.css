@@ -132,3 +132,7 @@ img.companylogo {
 .text-aboutme {
   min-height: 500px;
 }
+
+a.landing {
+  text-decoration:none;
+}
