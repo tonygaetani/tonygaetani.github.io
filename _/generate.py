@@ -46,6 +46,7 @@ if __name__ == '__main__':
     parser = ArgumentParser(description='generates a super awesome boring website')
     parser.add_argument('--path', default=root, help='name of the band')
     parser.add_argument('--build-path', default='..', help='where to put the website')
+    # TODO pages and links should be customizable
     pages = ('index', 'about', 'weather')
     links = zip(('hiking', 'music', 'linkedin', 'github', 'stackoverflow'),
                 ('http://hiking.tonygaetani.com',
