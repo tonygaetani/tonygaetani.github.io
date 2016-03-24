@@ -3,6 +3,8 @@
 
 # except...
 !.gitignore
+!content
 !content/*
+!templates
 !templates/*
 !generate.py
