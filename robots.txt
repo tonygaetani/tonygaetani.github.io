@@ -13,8 +13,7 @@
 User-agent: *
 Crawl-delay: 23
 Sitemap: /sitemap.xml   # not xml
-Disallow: /weather      # this is for me, no one knows about it
-Disallow: /flags        # super fun game time
+Disallow: /weather
 Disallow: /zen.txt
 Allow: /index
 Allow: /about
@@ -23,7 +22,6 @@ User-agent: adsbot-google
 Crawl-delay: 23
 Sitemap: /sitemap.xml
 Disallow: /weather
-Disallow: /flags
 Disallow: /zen.txt
 Allow: /index
 Allow: /about

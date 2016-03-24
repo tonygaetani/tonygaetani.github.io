@@ -1,0 +1,8 @@
+# ignore everythong
+*
+
+# except...
+!.gitignore
+!content/*
+!templates/*
+!generate.py
