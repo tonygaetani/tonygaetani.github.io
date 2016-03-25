@@ -1,4 +1,8 @@
 .generated-by {
     font-style: italic;
-    font-size: small;
+    font-size: xx-small;
+}
+
+a.footer.page {
+  font-size: small;
 }

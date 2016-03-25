@@ -1,23 +1,10 @@
 import os
 from argparse import ArgumentParser
 
-def generate_header(path, pages, links):
-    content = ''
-    with open(os.path.join(path, 'header.start.template.html'), 'r') as header_start_template:
-        content += header_start_template.read()
-        content += '\n'
-    for page in pages:
-        with open(os.path.join(path, 'header.page.template.html'), 'r') as page_template:
-            content += page_template.read().replace('~~NAME~~', page)
-            content += '\n'
-    for link in links:
-        with open(os.path.join(path, 'header.link.template.html'), 'r') as link_template:
-            content += link_template.read().replace('~~NAME~~', link[0]).replace('~~LINK~~', link[1])
-        content += '\n'
-    with open(os.path.join(path, 'header.end.template.html'), 'r') as header_end_template:
-        content += header_end_template.read()
-        content += '\n'
-    return content
+
+def generate_header(path):
+    with open(os.path.join(path, 'header.template.html'), 'r') as header_start_template:
+        return header_start_template.read() + '\n'
 
 
 def generate_footer(path):
@@ -33,10 +20,15 @@ def generate_page(path, page):
         return ''
 
 
-def main(args, pages, links):
-    for page in pages:
+def find_pages(path):
+    return map(lambda x: x[:x.rfind('.content.html')],
+               filter(lambda p: p.endswith('.content.html'), os.listdir(os.path.join(path, 'content'))))
+
+
+def main(args):
+    for page in find_pages(args.path):
         with open(os.path.join(args.build_path, "{}.html".format(page)), 'w') as page_content:
-            page_content.write(generate_header(os.path.join(args.path, 'templates'), pages, links))
+            page_content.write(generate_header(os.path.join(args.path, 'templates')))
             page_content.write(generate_page(os.path.join(args.path, 'content'), page))
             page_content.write(generate_footer(os.path.join(args.path, 'templates')))
 
@@ -46,12 +38,4 @@ if __name__ == '__main__':
     parser = ArgumentParser(description='generates a super awesome boring website')
     parser.add_argument('--path', default=root, help='name of the band')
     parser.add_argument('--build-path', default='..', help='where to put the website')
-    # TODO pages and links should be customizable
-    pages = ('index', 'about', 'weather')
-    links = zip(('hiking', 'music', 'linkedin', 'github', 'stackoverflow'),
-                ('http://hiking.tonygaetani.com',
-                 'http://music.tonygaetani.com',
-                 'https://de.linkedin.com/pub/tony-gaetani/93/b6b/970',
-                 'https://github.com/tonygaetani',
-                 'https://stackoverflow.com/users/664594/tonyg',))
-    main(parser.parse_args(), pages, links)
+    main(parser.parse_args())
