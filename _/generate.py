@@ -36,6 +36,6 @@ def main(args):
 if __name__ == '__main__':
     root = os.path.dirname(os.path.realpath(__file__))
     parser = ArgumentParser(description='generates a super awesome boring website')
-    parser.add_argument('--path', default=root, help='name of the band')
+    parser.add_argument('--path', default=root, help='path to site content and templates')
     parser.add_argument('--build-path', default='..', help='where to put the website')
     main(parser.parse_args())
